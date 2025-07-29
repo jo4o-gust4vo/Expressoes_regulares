@@ -6,7 +6,7 @@ class Exercicio07:
 
     @classmethod
     def verificar(cls, texto):
-        p = re.compile('[@][A-Za-z]|[0-9_]')
+        p = re.compile('^@[A-Za-z]+[0-9_]*$')
         if p.search(texto):
             return print('String válida!')
         else:
